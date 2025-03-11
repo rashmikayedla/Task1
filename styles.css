@@ -1,0 +1,88 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+#navbar.sticky {
+    background-color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+.nav-list li a.active {
+    color: #FF5733;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
